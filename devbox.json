@@ -1,0 +1,30 @@
+{
+  "packages": [
+    "python@3.13.3"
+  ],
+  "env": {
+      "PIPENV_CUSTOM_VENV_NAME": "$HOME/.venvs/piantor-bt",
+      "PYTHONPATH": "$HOME/.venvs/piantor-bt/lib/python3.13/site-packages",
+      "VENV_DIR": "$HOME/.venvs/piantor-bt",
+      "VIRTUAL_ENV": "$HOME/.venvs/piantor-bt",
+      "PATH": "$HOME/.venvs/piantor-bt/bin:$PATH",
+      "REQUESTS_CA_BUNDLE": "/etc/ssl/certs/ca-certificates.crt",
+      "CLUSTER_CA_BUNDLE": "/etc/ssl/certs/ca-certificates.crt",
+      "SSL_CERT_FILE": "/etc/ssl/certs/ca-certificates.crt"
+  },
+  "shell": {
+    "init_hook": "./devbox-startup.sh",
+    "scripts": {
+      "patch":[
+        "python main.py \"$@\""
+      ],
+      "unittest":[
+        "pytest"
+      ],
+      "lint": [
+        "uv run black --check .",
+        "uv run bandit --severity-level medium -r ."
+      ]
+    }
+  }
+}
