@@ -8,7 +8,7 @@ on:
       - "config/*.dtsi"
       - "boards/arm/piantor_pro_bt/*.dtsi"
       - "draw/keymap_drawer.config.yaml"
-      # - 'boards/*/*/*.keymap'
+      - "boards/*/*/*.keymap"
 
 jobs:
   draw:
@@ -20,4 +20,4 @@ jobs:
       config_path: "draw/keymap_drawer.config.yaml" # config file, ignored if not exists
       output_folder: "draw" # path to save produced SVG and keymap YAML files
       parse_args: "" # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "-d  boards/arm/piantor_pro_bt/piantor_pro_bt-layouts.dtsi" # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      draw_args: "-d boards/arm/piantor_pro_bt/piantor_pro_bt-layouts.dtsi" # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
