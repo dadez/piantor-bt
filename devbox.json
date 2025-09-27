@@ -1,0 +1,27 @@
+{
+  "packages": [
+    "python@3.13.3",
+    "uv@latest"
+  ],
+  "env": {
+    "PIPENV_CUSTOM_VENV_NAME": "$HOME/.venvs/piantor-bt",
+    "PYTHONPATH": "$HOME/.venvs/piantor-bt/lib/python3.13/site-packages",
+    "VENV_DIR": "$HOME/.venvs/piantor-bt",
+    "VIRTUAL_ENV": "$HOME/.venvs/piantor-bt",
+    "PATH": "$HOME/.venvs/piantor-bt/bin:$PATH",
+    "REQUESTS_CA_BUNDLE": "/etc/ssl/certs/ca-certificates.crt",
+    "CLUSTER_CA_BUNDLE": "/etc/ssl/certs/ca-certificates.crt",
+    "SSL_CERT_FILE": "/etc/ssl/certs/ca-certificates.crt"
+  },
+  "shell": {
+    "init_hook": "./devbox-startup.sh",
+    "scripts": {
+      "parse": [
+        "keymap parse -c 10 -z ./config/piantor_pro_bt.keymap > ./draw/piantor_pro_bt.yaml"
+      ],
+      "draw": [
+        "keymap draw ./draw/piantor_pro_bt.yaml -d ./boards/arm/piantor_pro_bt/piantor_pro_bt-layouts.dtsi > ./draw/piantor_pro_bt.svg"
+      ]
+    }
+  }
+}
