@@ -1,0 +1,11 @@
+[project]
+name = "piantor-bt"
+version = "0.1.0"
+description = "Keymap drawer for keyboards"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bandit>=1.8.6",
+    "black>=25.1.0",
+    "keymap-drawer>=0.22.1",
+]
