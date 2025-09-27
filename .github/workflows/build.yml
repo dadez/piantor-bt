@@ -1,5 +1,20 @@
 name: Build ZMK firmware
-on: [push, pull_request, workflow_dispatch]
+# on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    paths:
+      - "config/**"
+      - "config/*.dtsi"
+      - "boards/arm/piantor_pro_bt/*.dtsi"
+      - "draw/keymap_drawer.config.yaml"
+      - "boards/*/*/*.keymap"
+  pull_request:
+    paths:
+      - "config/**"
+      - "config/*.dtsi"
+      - "boards/arm/piantor_pro_bt/*.dtsi"
+      - "draw/keymap_drawer.config.yaml"
+      - "boards/*/*/*.keymap"
 
 jobs:
   build:
