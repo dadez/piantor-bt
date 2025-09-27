@@ -26,3 +26,4 @@ devbox run draw
 
 - [ ] configure workflow for automatically render keymap image
 - [ ] nav layout: `redo`, `paste`, `copy` and `undo` does not work
+- [ ] add french/german letters with accent
