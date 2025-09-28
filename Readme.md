@@ -26,8 +26,8 @@ devbox run draw
 
 - [x] configure workflow for automatically render keymap image
 - [x] nav layout: `redo`, `paste`, `copy` and `undo` does not work --> removed
-- [ ] add french/german letters with accent
+- [ ] add french/german letters with accent, have a look at [zmk-unicode](https://github.com/urob/zmk-unicode)
 - [ ] check for macro for delete until end of line and start of line
 - [ ] number: no need for have minus twice
 - [ ] symbol: if use number with shift, can reach the symbols from middle
-- [ ] homer row mod: f + i often writes I
+- [ ] home row mod: f + i often writes
