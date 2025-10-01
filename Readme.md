@@ -27,11 +27,11 @@ devbox run draw
 - [x] configure workflow for automatically render keymap image
 - [x] nav: `redo`, `paste`, `copy` and `undo` does not work --> removed
 - [x] symbol: the $ sign is defined twice, on `t` and `s`, following the plan, should be `(`
-- [ ] **feature**: add french/german letters with accent, have a look at [zmk-unicode](https://github.com/urob/zmk-unicode)
+- [ ] **feature**: add french/german letters with accent, have a look at [zmk-unicode](https://github.com/urob/zmk-unicode) or use us-intl layout
 - [ ] feature: check for macro for delete until end of line and start of line
 - [x] number: no need for have minus twice
 - [ ] symbol: if use number with shift, can reach the symbols from middle
-- [ ] issue: home row mod: f + i often writes (only a shift issue ?)
+- [x] issue: home row mod: f + i often writes (only a shift issue ?)
 - [ ] feature: add a mouse layer
 - [ ] chore: consider use home row mod keys like miryoku (super, alt, ctrl, shift)
 - [ ] chore: &trans vs &none for unused keys
