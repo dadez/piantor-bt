@@ -23,7 +23,7 @@ layers:
   - {t: J, h: LEFT SHIFT}
   - {t: K, h: LGUI}
   - {t: L, h: LCTRL}
-  - {t: '''', h: LEFT ALT}
+  - {t: '''', h: RIGHT ALT}
   - '&quoteDT'
   - '!'
   - Z
@@ -37,7 +37,7 @@ layers:
   - '&dotDT'
   - '&slashDT'
   - '&pipeDT'
-  - {t: ESCAPE, h: KEYB}
+  - {t: ESCAPE, h: MOUSE}
   - {t: SPACE, h: NAV}
   - {t: TAB, h: MEDIA}
   - {t: ENTER, h: SYMBOL}
@@ -66,7 +66,7 @@ layers:
   - LEFT SHIFT
   - LEFT GUI
   - LCTRL
-  - LEFT ALT
+  - RIGHT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '%'
@@ -109,7 +109,7 @@ layers:
   - LEFT SHIFT
   - LGUI
   - LCTRL
-  - LEFT ALT
+  - RIGHT ALT
   - {t: ▽, type: trans}
   - <
   - {t: '>', h: toggle}
@@ -147,19 +147,19 @@ layers:
   - F4
   - F5
   - F6
-  - {t: ▽, type: trans}
+  - CAPSLOCK
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - LCMD
   - LCTRL
-  - LEFT ALT
+  - RIGHT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F10
   - F1
   - F2
   - F3
-  - {t: ▽, type: trans}
+  - '&caps_word'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -258,16 +258,16 @@ layers:
   - STOP
   - PLAY PAUSE
   - MUTE
-  KEYB:
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys_reset'
-  - '&bootloader'
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -277,6 +277,10 @@ layers:
   - LGUI
   - LSHIFT
   - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -285,19 +289,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MCLK'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
