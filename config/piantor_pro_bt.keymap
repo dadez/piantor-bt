@@ -106,7 +106,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp UNDER  &kp Q  &kp W  &kp E  &kp R  &longPress LC(T) T  &kp Y  &kp U  &kp I  &kp O  &kp P  &graveDT  &kp MINUS  &HMLeft LEFT_ALT A  &HMLeft LCTRL S  &HMLeft LGUI D  &HMLeft LEFT_SHIFT F  &kp G  &kp H  &HMRight LEFT_SHIFT J  &HMRight LGUI K  &HMRight LCTRL L  &HMRight RIGHT_ALT SQT  &quoteDT  &kp EXCL  &kp Z  &kp X  &longPress LC(LS(C)) C  &longPress LC(LS(V)) V  &longPress LC(B) B  &kp N  &kp M  &commaDT  &dotDT  &slashDT  &pipeDT  &lt 6 ESCAPE  &lt 4 SPACE  &lt 5 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DELETE
+&kp UNDER  &kp Q  &kp W  &kp E  &kp R  &longPress LC(T) T  &kp Y  &kp U  &kp I  &kp O  &kp P  &graveDT  &kp MINUS  &HMLeft LEFT_ALT A  &HMLeft LCTRL S  &HMLeft LGUI D  &HMLeft LEFT_SHIFT F  &kp G  &kp H  &HMRight LEFT_SHIFT J  &HMRight LGUI K  &HMRight LCTRL L  &HMRight RIGHT_ALT SQT  &quoteDT  &kp EXCL  &kp Z  &kp X  &longPress LC(LS(C)) C  &longPress LC(LS(V)) V  &kp B  &kp N  &kp M  &commaDT  &dotDT  &slashDT  &pipeDT  &lt 6 ESCAPE  &lt 4 SPACE  &lt 5 TAB  &lt 2 ENTER  &lt 1 BACKSPACE  &lt 3 DELETE
             >;
         };
 
