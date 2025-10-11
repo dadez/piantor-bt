@@ -30,7 +30,7 @@ layers:
   - X
   - {t: C, h: Ctl+Sft+C}
   - {t: V, h: Ctl+Sft+V}
-  - {t: B, h: Ctl+B}
+  - B
   - N
   - M
   - '&commaDT'
