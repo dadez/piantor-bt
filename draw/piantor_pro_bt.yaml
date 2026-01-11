@@ -153,7 +153,7 @@ layers:
   - LCMD
   - LCTRL
   - RIGHT ALT
-  - {t: ▽, type: trans}
+  - Ctl+LEFT ALT
   - {t: ▽, type: trans}
   - F10
   - F1
