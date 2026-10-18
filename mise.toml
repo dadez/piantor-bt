@@ -1,0 +1,18 @@
+[tools]
+python = "3.13.16"
+uv = "latest"
+
+[settings]
+# experimental needed for use of uv deps
+experimental = true
+idiomatic_version_file_enable_tools = ["python"]
+python.uv_venv_auto = "create|source"
+
+[deps.uv]
+auto = true
+
+[tasks.parse]
+run = "uv run keymap parse -c 10 -z ./config/piantor_pro_bt.keymap > ./draw/piantor_pro_bt.yaml"
+
+[tasks.draw]
+run = "uv run keymap draw ./draw/piantor_pro_bt.yaml -d ./boards/arm/piantor_pro_bt/piantor_pro_bt-layouts.dtsi > ./draw/piantor_pro_bt.svg"

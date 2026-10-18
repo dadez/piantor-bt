@@ -16,10 +16,10 @@ Use the [keymap-drawer project](https://github.com/caksoylar/keymap-drawer) for 
 
 ```bash
 # parse config for build a yaml file
-devbox run parse
+mise run parse
 
 # draw svg file based on previous yaml file
-devbox run draw
+mise run draw
 ```
 
 ## todo
@@ -38,3 +38,12 @@ devbox run draw
 - [ ] chore: &trans vs &none for unused keys
 - [x] issue: no bluetooth at boot (pc)
   - connect with usb, at least the left keyboard
+
+# Build locally
+
+```shell
+# get zmk
+git clone https://github.com/zmkfirmware/zmk.git ~/Documents/dev/keyboard/
+
+bash build.sh
+```
